@@ -39,7 +39,15 @@ System.out.println(accountInfo.toString);
 </repository>
 ```
 
-```
+```sh
+mv claen test
+mvn claen verify -DskipIntegrationTests=false
+mvn claen install
+mvn javadoc:aggregate
+mvn dependency:tree
+mvn versions:display-dependency-updates
+mvn versions:display-plugin-updates
+mvn com.coveo:fmt-maven-plugin:format
 ```
 
 
