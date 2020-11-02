@@ -42,9 +42,9 @@ System.out.println(accountInfo.toString);
 ```
 
 ```sh
-mv claen test
-mvn claen verify -DskipIntegrationTests=false
-mvn claen install
+mv clean test
+mvn clean verify -DskipIntegrationTests=false
+mvn clean install
 mvn javadoc:aggregate
 mvn dependency:tree
 mvn versions:display-dependency-updates
